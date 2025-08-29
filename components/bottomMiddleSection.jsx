@@ -1,26 +1,26 @@
-import { IoBed } from "react-icons/io5";
-import { GiMeditation } from "react-icons/gi";
-
 const BottomMiddleSection = () => {
     return (
-        <div className="grid grid-cols-2 bg-white rounded-2xl w-[100%] h-[100%]">
-            <div className="p-8 border-r-1 border-gray-300">
-                <div className="border-1 border-gray-300 p-1.5 w-fit rounded-full">
-                    <p>CS Study</p>
-                    <p>09:00 - 12:30</p>
+        <div className="grid p-4 grid-cols-2 bg-white rounded-2xl">
+            <div className="p-4 bg-[#f5f5f5] rounded-2xl flex flex-col justify-between">
+                <div className="">
+                    <p className="text-[30px]">CS Study</p>
+                    <p className="text-[20px] mt-2">09:00 - 12:30</p>
                 </div>
-                <p className="text-[18px] mt-8">Bedtime</p>
-                <p className="text-gray-500 mt-2">21:00 - 06:00 A.m</p>
+                <div className="flex w-[100%] justify-between items-center">
+                    <p className="text-[18px]">Personal</p>
+                    <p className="font-black">Now</p>
+                </div>
             </div>
 
-            <div className="p-8">
-                <div className="border-1 border-gray-300 p-1.5 w-fit rounded-full">
-                    <div className="bg-[#EE5544] w-fit p-3 rounded-full">
-                        <GiMeditation className="bg-[#EE5544]" size={30} color="white" />
-                    </div>
+            <div className="p-4 flex flex-col justify-between">
+                <div className="">
+                    <p className="text-[30px]">UX Writing</p>
+                    <p className="text-[20px] mt-2">13:00 - 15:00</p>
                 </div>
-                <p className="text-[18px] mt-8">Daily Yoga</p>
-                <p className="text-gray-500 mt-2">06:15 - 07:00 A.m</p>
+                <div className="flex w-[100%] justify-between items-center">
+                    <p className="text-[18px]">Work</p>
+                    <p className="font-black text-purple-500">Next</p>
+                </div>
             </div>
         </div>
     )

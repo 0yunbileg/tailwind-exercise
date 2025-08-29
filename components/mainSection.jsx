@@ -3,6 +3,7 @@ import FocusSection from "./focusSection"
 import BottomLeftSection from "./bottomLeftSection"
 import TopMiddleSection from "./topMiddleSection"
 import BottomMiddleSection from "./bottomMiddleSection"
+import MiddleSection from "./middleSection"
 
 const MainSection = () => {
     return (
@@ -12,9 +13,9 @@ const MainSection = () => {
                 <FocusSection />
                 <BottomLeftSection />
             </div>
-            <div className="grid grid-rows-[1fr_2fr_1fr] border-1 w-[100%] h-[100%] gap-4">
+            <div className="grid grid-rows-[1fr_2fr_1fr] w-[100%] h-[100%] gap-4">
                 <TopMiddleSection />
-                <div className="border-1 w-[100%] h-[100%]"></div>
+                <MiddleSection />
                 <BottomMiddleSection />
             </div>
             <div className="grid grid-rows-[1fr_1fr_2fr] border-1 w-[100%] h-[100%] gap-4">
